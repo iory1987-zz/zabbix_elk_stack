@@ -20,8 +20,8 @@
     Copyleft 2015
     
  Stack do sistema de monitoramento zabbix utilizando elastic para armazenar dados das tabelas de history.<br>
- Para usar a stack é necessario ter o docker instalado, verção CE 17.x ou superior. [link](https://docs.docker.com/install/)<br>
- Precisamos também do docker compose, versão 18.0.x ou superior. [link](https://docs.docker.com/compose/install/)<br>
+ Para usar a stack é necessario ter o docker instalado, verção CE 17.x ou superior. [baixar docker](https://docs.docker.com/install/)<br>
+ Precisamos também do docker compose, versão 18.0.x ou superior. [baixar docker-compose](https://docs.docker.com/compose/install/)<br>
  
  
  Para construção utilizamos quase todas as imagens oficiiais da zabbix sis, mysql e elastisearch.<br>
