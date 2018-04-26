@@ -32,6 +32,8 @@
    - Web Interface: Parte grafica do zabbix (vulgo GUI). Para essa parte da stack tive que modificar um pouco a imagem oficial pois a mesma não tinha opção de configurar o elk direto no zabbix.conf.php.
  
  Para rodar essa stack execute o seguinte comando:<br>
-    sudo docker-compose up -d <br>
- Após a execução do comando espere o docker fazer o download das imagens.
+    <code>sudo docker-compose up -d </code><br>
+ Após a execução do comando espere o docker fazer o download das imagens.<br>
+ Para verificar se está tudo certo é só rodar seguinte comando:<br>
+    <code>sudo docker-commpose ps</code>
  
