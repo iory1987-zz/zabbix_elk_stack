@@ -19,11 +19,9 @@
     
     Copyleft 2015
     
- Stack do sistema de monitoramento zabbix utilizando elastic para armazenar dados das tabelas de history.
- Para usar a stack é necessario ter o docker instalado, verção CE 17.x ou superior.
- [link](https://docs.docker.com/install/)
- Precisamos também do docker compose, versão 18.0.x ou superior
- [link](https://docs.docker.com/compose/install/)
+ <p>Stack do sistema de monitoramento zabbix utilizando elastic para armazenar dados das tabelas de history.</p><br>
+ <p>Para usar a stack é necessario ter o docker instalado, verção CE 17.x ou superior.</p> [link](https://docs.docker.com/install/)<br>
+ <p>Precisamos também do docker compose, versão 18.0.x ou superior. [link](https://docs.docker.com/compose/install/)</p><br>
  
  
  Para construção utilizamos quase todas as imagens oficiiais da zabbix sis, mysql e elastisearch.
@@ -33,7 +31,7 @@
    - ZabbixServer: Core do zabbix, sendo utilizado sem balanceamento de carga ou HA mas pode facilmente ser configurado usando pacemaker ou sistema parecidos.
    - Web Interface: Parte grafica do zabbix (vulgo GUI). Para essa parte da stack tive que modificar um pouco a imagem oficial pois a mesma não tinha opção de configurar o elk direto no zabbix.conf.php.
  
- Para rodar essa stack execute o seguinte comando:
-    sudo docker-compose up -d
+ Para rodar essa stack execute o seguinte comando:<br>
+    sudo docker-compose up -d <br>
  Após a execução do comando espere o docker fazer o download das imagens.
  
