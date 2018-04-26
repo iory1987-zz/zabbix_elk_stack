@@ -33,5 +33,7 @@
  
  Para rodar essa stack execute o seguinte comando: <code>sudo docker-compose up -d </code><br>
  Após a execução do comando espere o docker fazer o download das imagens.<br>
- Para verificar se está tudo certo é só rodar seguinte comando: <code>sudo docker-commpose ps</code>
+ Para verificar se está tudo certo é só rodar seguinte comando: <code>sudo docker-commpose ps</code><br>
+ Todas as imagens utilizadas podem ser contradas no [docker hub](https://hub.docker.com/)<br>
+ Utilize, compartilhe e melhore esse projeto, seja livre!
  
