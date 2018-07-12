@@ -36,7 +36,7 @@ services:
       - stack_zabbix
 
   zabbixsr:
-    image: zabbix/zabbix-server-mysql:centos-3.4.8
+    image: zabbix/zabbix-server-mysql:centos-3.4.11
     container_name: zabbix_server
     restart: always
     environment:
@@ -57,7 +57,7 @@ services:
       - stack_zabbix
 
   webapp:
-    image: iory1987/zabbixweb:1.0
+    image: zabbix/zabbix-web-nginx-mysql:centos-3.4.11
     container_name: zabbix_web
     restart: always
     environment:
@@ -67,6 +67,8 @@ services:
       - MYSQL_PASSWORD=zabbixpasswd
       - MYSQL_DATABASE=zabbixdb
       - PHP_TZ=America/Sao_Paulo
+      - ZBX_HISTORYSTORAGEURL=http://elasticsearch:9200
+      - ZBX_HISTORYSTORAGETYPES="['uint','dbl','str','log','text']"
     ports:
       - 8080:80
     depends_on:
