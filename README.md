@@ -29,7 +29,7 @@
    - ElasticSearch: Utilizando a imagem oficial, subimos uma instancia para fazer o armazenamento dos logs que toma muito espaço no banco do zabbix.
    - MySQL: Sistema principal de armazenamento da stack. Como o zabbix foi desenvolvido, a principio com o mysql, o mesmo apresenta melhor permormace, vistão não estamos levando em conta nehum tunning feita por DBAs ou ADs.
    - ZabbixServer: Core do zabbix, sendo utilizado sem balanceamento de carga ou HA mas pode facilmente ser configurado usando pacemaker ou sistema parecidos.
-   - Web Interface: Parte grafica do zabbix (vulgo GUI). Para essa parte da stack tive que modificar um pouco a imagem oficial pois a mesma não tinha opção de configurar o elk direto no zabbix.conf.php.
+   - Web Interface: Parte grafica do zabbix (vulgo GUI).
  
  Para rodar essa stack execute o seguinte comando: <code>sudo docker-compose up -d </code><br>
  Após a execução do comando espere o docker fazer o download das imagens.<br>
